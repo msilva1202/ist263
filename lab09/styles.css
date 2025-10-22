@@ -23,6 +23,6 @@ nav {margin-bottom: 30px}
 
 body { font-family: sans-serif; }
 h1, h2 { color: darkcyan; }
-.evenrow { color: DarkGrey; }
+.evenrow { color: black; background-color: aquamarine;}
 h1 { font-family: 2 em; }
 h2 { font-family: .5 em; }
