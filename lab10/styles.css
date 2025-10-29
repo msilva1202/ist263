@@ -7,7 +7,7 @@ a:link {
 }
 
 a:visited {
-  color: gray;
+  color: greenyellow;
 }
 
 nav a:hover {background-color: #d5e7eb;}
