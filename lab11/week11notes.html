@@ -7,10 +7,19 @@
         <style>
             h1 {cursor: pointer}
         </style>
+        <script>
+            function SecondBlock () {
+                //alert('Second Alert');
+            }
+            function clicky () {
+                alert('This was because of a click');
+            }
+        </script>
     </head>
     <body>
         <script>alert('I am sending an alert');</script>
         <h1>Popppopopopoopopopopopo</h1>
-        <p>Stinky butt poopy man </p>
+        <p onmouseover="SecondBlock();">Stinky butt poopy man </p>
+        <p>Punch me directly in the face please I am wanting that <a href="#" onclick="clicky();">right now</a></p>
     </body>
 </html>
