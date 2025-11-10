@@ -10,11 +10,15 @@
                 document.getElementByID("p1").innerhtml="New Content"
             }
             function wrongAnswer() {
-                document.getElementByID("wrong").innnerhtml= 
+                document.getElementById("wrong").innnerhtml= 
                 "<span style='color:red;'>True is the wrong answer!</span>"
             }
             function changeImage() {
-                document.getElementByID("bradyimage").setAttribute("src","../images/logo-sized.png");
+                document.getElementById("bradyimage").
+                setAttribute("src","../images/logo-sized.png");
+            }
+            function bluey() {
+                document.getElementById("p2").style.color
             }
         </script>
     </head>
