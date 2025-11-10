@@ -4,13 +4,13 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>JavaScript Pt 2 Week 12</title>
-        <style></style>
+
         <script>
             function bigly() {
-                document.getElementById("p1").innerhtml="New Content"
+                document.getElementById("p1").innerHTML="New Content"
             }
             function wrongAnswer() {
-                document.getElementById("wrong").innnerhtml= 
+                document.getElementById("wrong").innnerHTML= 
                 "<span style='color:red;'>True is the wrong answer!</span>"
             }
             function changeImage() {
@@ -27,7 +27,7 @@
         <p id="p1" onclick="bigly();">Content Goes Here</p>
         <p id="p2">Paragraph</p>
 
-        <h1>My JavaScript Quiz</h1>
+        <h1 onmouseover="bluey();">My JavaScript Quiz</h1>
         <p>Java and JavaScript are the same thing.</p>
         <p onclick="wrongAnswer();" id="wrong">True</p>
         <p onclick="rightAnswer();" id="correct">False</p>
