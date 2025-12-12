@@ -24,32 +24,36 @@
         }
 
         #slideshow-container {
-            background-color: #000000;
-            width: 1200px;
+            width: 1000px;
             margin: auto;
+            background: black;
+            padding: 20px;
         }
 
         #bigimages img {
-            margin-right: 50px;
+            width: 400px;
+            display: none;
+        }
+
+        #bigimages {
             float: left;
-            width: 300px;
+            margin-right: 40px;
         }
 
         #actorinfo {
-            padding: 100px;
+            padding: 20px;
+            width: 500px;
+            float: left;
         }
 
         #thumbnails {
-            width: 850px;
-            margin: auto;
-            padding-top: 20px;
-            display: flex;
-            justify-content: center;
+            clear: both;
+            text-align: center;
+            padding-top: 40px;
         }
 
         #thumbnails img {
-            width: 90px;
-            height: 120px;
+            width: 100px;
             margin: 10px;
             cursor: pointer;
             border: 2px solid white;
@@ -58,7 +62,7 @@
         #thumbnails img:hover {
             border-color: yellow;
         }
-        h1, h2, nav a {
+        h1, h2 {
             font-family: "Science Gothic", sans-serif;
             font-optical-sizing: auto;
             font-weight: 400;
@@ -66,12 +70,7 @@
             font-variation-settings:
                 "slnt" 0,
                 "wdth" 100,
-                "CTRS" 0;
-            }
-        .actorinfo {margin: 30px}
-        .favoriteactors{
-            text-align: center;
-        }
+                "CTRS" 0;}
         .amount {
             font-weight: normal;
         }
@@ -83,32 +82,62 @@
         document.getElementById('keitel').style.display = 'none';
         document.getElementById('roth').style.display = 'none';
         document.getElementById('thurman').style.display = 'none';
+        document.getElementById('jackson').style.display = 'none';
+        document.getElementById('madsen').style.display = 'none';
+        document.getElementById('keitel').style.display = 'none';
+        document.getElementById('roth').style.display = 'none';
+        document.getElementById('thurman').style.display = 'none';
 
-        document.getElementById('jacksoninfo').style.display = 'none';
-        document.getElementById('madseninfo').style.display = 'none';
-        document.getElementById('keitelinfo').style.display = 'none';
-        document.getElementById('rothinfo').style.display = 'none';
-        document.getElementById('thurmaninfo').style.display = 'none';
+        document.getElementById('dogsinfo').style.display = 'none';
+        document.getElementById('pulpinfo').style.display = 'none';
+        document.getElementById('browninfo').style.display = 'none';
+        document.getElementById('kill1info').style.display = 'none';
+        document.getElementById('kill2info').style.display = 'none';
+        document.getElementById('deathinfo').style.display = 'none';
+        document.getElementById('basterdsinfo').style.display = 'none';
+        document.getElementById('djangoinfo').style.display = 'none';
+        document.getElementById('hatefulinfo').style.display = 'none';
+        document.getElementById('hollywoodinfo').style.display = 'none';
     }
-    function JacksonOn() {
+    function DogsOn() {
         document.getElementById('jackson').style.display = 'block';
-        document.getElementById('jacksoninfo').style.display = 'block';
+        document.getElementById('dogsinfo').style.display = 'block';
     }
-    function MadsenOn() {
+    function PulpOn() {
         document.getElementById('madsen').style.display = 'block';
-        document.getElementById('madseninfo').style.display = 'block';
+        document.getElementById('pulpinfo').style.display = 'block';
     }
-    function KeitelOn() {
+    function BrownOn() {
         document.getElementById('keitel').style.display = 'block';
-        document.getElementById('keitelinfo').style.display = 'block';
+        document.getElementById('browninfo').style.display = 'block';
     }
-    function RothOn() {
+    function Kill1On() {
         document.getElementById('roth').style.display = 'block';
-        document.getElementById('rothinfo').style.display = 'block';
+        document.getElementById('killinfo').style.display = 'block';
     }
-    function ThurmanOn() {
+    function Kill2On() {
         document.getElementById('thurman').style.display = 'block';
-        document.getElementById('thurmaninfo').style.display = 'block';
+        document.getElementById('killinfo').style.display = 'block';
+    }
+    function DeathOn() {
+        document.getElementById('jackson').style.display = 'block';
+        document.getElementById('deathinfo').style.display = 'block';
+    }
+    function BasterdsOn() {
+        document.getElementById('madsen').style.display = 'block';
+        document.getElementById('basterdsinfo').style.display = 'block';
+    }
+    function DjangoOn() {
+        document.getElementById('keitel').style.display = 'block';
+        document.getElementById('djangoinfo').style.display = 'block';
+    }
+    function HatefulOn() {
+        document.getElementById('roth').style.display = 'block';
+        document.getElementById('hatefulinfo').style.display = 'block';
+    }
+    function HollywoodOn() {
+        document.getElementById('thurman').style.display = 'block';
+        document.getElementById('hollywoodinfo').style.display = 'block';
     }
 </script>
 </head>
@@ -119,113 +148,126 @@
     </nav>
     <div id="slideshow-container">
    
-    <div class="favoriteactors">
-        <h1>Quentin Tarantino's Favorite Actors</h1>
-    </div>
-   
     <div id="bigimages">
-        <img src="../project-images/jacksonvert.jpg" style="display:none;" id="jackson" alt="jackson">
-        <img src="../project-images/madsenvert.jpg" style="display:none;" id="madsen" alt="madsen">
-        <img src="../project-images/Reservoir-Dogs-9.jpg" style="display:none;" id="keitel" alt="keitel">
-        <img src="../project-images/keitelvert.jpg" style="display:none;" id="roth" alt="roth">
-        <img src="../project-images/thurmanvert.jpeg" style="display:none;" id="thurman" alt="thurman">
+        <img src="../project-images/SamuelJackson.avif" id="jackson" alt="jackson">
+        <img src="../project-images/Madsen.webp" id="madsen" alt="madsen">
+        <img src="../project-images/Reservoir-Dogs-9.jpg" id="keitel" alt="keitel">
+        <img src="../project-images/TimRoth.jpg" id="roth" alt="roth">
+        <img src="../project-images/Uma-Thurman.jpg" id="thurman" alt="thurman">
+        <img src="../project-images/SamuelJackson.avif" id="jackson" alt="jackson">
+        <img src="../project-images/Madsen.webp" id="madsen" alt="madsen">
+        <img src="../project-images/Reservoir-Dogs-9.jpg" id="keitel" alt="keitel">
+        <img src="../project-images/TimRoth.jpg" id="roth" alt="roth">
+        <img src="../project-images/Uma-Thurman.jpg" id="thurman" alt="thurman">
     </div>
-    <div class="actorinfo">
 
-        <div id="jacksoninfo" style="display:none;">
+    <div id="actorinfo">
+
+        <div id="dogsinfo" style="display:none;">
             <h1>Reservoir Dogs (1992)</h1>
             <h2>Budget: <span class="amount">~$1.2 million</span></h2>
             <h2>Worldwide Gross: <span class="amount">~$2.9 million</span></h2>
-            <p>Pulp Fiction (1994) – Played Jules Winnfield, one of Tarantino’s most iconic characters, delivering memorable
-            dialogue and cementing his place in film history.
-            Jackie Brown (1997) – Starred as Ordell Robbie, a smooth but dangerous gun runner.
-            Kill Bill: Vol. 2 (2004) – Brief role as Rufus, the church organist.
-            Inglourious Basterds (2009) – Provided voice narration.
-            Django Unchained (2012) – Played Stephen, the manipulative house slave loyal to Calvin Candie.
-            The Hateful Eight (2015) – Took center stage as Major Marquis Warren, a former Union officer turned bounty
-            hunter.
-
+            <h2>Stars: Harvey Keitel, Tim Roth, Michael Madsen, Steve Buscemi, Chris Penn, Lawrence Tierney</h2>
             <h2>Summary</h2>
-            <p>Samuel L. Jackson is Tarantino’s most frequent collaborator, and his performances have helped define the
-            director’s style. He has taken on everything from leading roles, like Jules in Pulp Fiction or Major Warren
-            in The Hateful Eight, to brief cameos and even narration. What stands out is how naturally his energy and
-            delivery fit with Tarantino’s writing, which makes him feel essential to the director’s body of work.</p>
+            <p>Tarantino’s debut film is a stripped-down crime thriller centered on a diamond heist that collapses before it even begins. The surviving criminals regroup in a warehouse, bleeding, panicked, and increasingly suspicious of one another. What follows is a tense unraveling of loyalty and betrayal, full of sharp dialogue and sudden violence that introduced Tarantino’s now-signature style.</p>
+
         </div>
-        <div id="madseninfo" style="display:none;">
-            <h1>Michael Madsen – 5 appearances</h1>
-            <h2>Appearances</h2>
-            <p>Reservoir Dogs (1992) – Played Mr. Blonde, infamous for the “stuck in the middle” torture scene.
-            Kill Bill: Vol. 1 (2003) – Brief role as Budd in setup.
-            Kill Bill: Vol. 2 (2004) – Larger role as Budd, The Bride’s down-and-out former assassin colleague.
-            The Hateful Eight (2015) – Played Joe Gage, the mysterious cowboy.
-            O – Appeared as Sheriff Hackett in Rick Dalton’s TV show.
-            </p>
-
+        <div id="pulpinfo" style="display:none;">
+            <h1>Pulp Fiction (1994)</h1>
+            <h2>Budget: ~$8.5 million</h2>
+            <h2>Worldwide Gross: ~$213 million</h2>
+            <h2>Stars: John Travolta, Samuel L. Jackson, Uma Thurman, Bruce Willis, Ving Rhames</h2>
             <h2>Summary</h2>
-            <p>Michael Madsen has played some of Tarantino’s most dangerous and unpredictable characters. His role as Mr.
-            Blonde in Reservoir Dogs became one of the film’s most infamous moments, and his later work as Budd in Kill Bill
-            showed a more tired but still threatening figure. Madsen’s ability to bring both menace and a sense of
-            unpredictability makes him one of Tarantino’s go-to actors.</p>
+            <p>A cultural landmark of the ’90s, Pulp Fiction weaves together intersecting stories involving gangsters, a boxer, a crime boss’s wife, and a pair of small-time thieves. Its nonlinear structure keeps audiences off balance while blending dark humor, pop-culture-laced conversations, and bursts of shocking violence. The film’s iconic scenes and unconventional storytelling redefined crime cinema and made Tarantino a household name.</p>
         </div>
 
-        <div id="keitelinfo" style="display:none;">
-            <h1>Harvey Keitel – 4 appearances</h1>
-            <h2>Appearances</h2>
-            <p>Reservoir Dogs (1992) – Played Mr. White, one of the main criminals in Tarantino’s debut.
-            Pulp Fiction (1994) – Appeared as Winston Wolfe, the calm “cleaner” who solves problems.
-            From Dusk Till Dawn (1996, written by Tarantino) – Starred as Jacob Fuller, though not directed by Tarantino,
-            it added to their collaboration.
-            Inglourious Basterds (2009) – Provided the voice of an OSS officer in a cameo.
-            </p>
-
+        <div id="browninfo" style="display:none;">
+            <h1>Jackie Brown (1997)</h1>
+            <h2>Budget: ~$12 million</h2>
+            <h2>Worldwide Gross: ~$74 million</h2>
+            <h2>Stars: Pam Grier, Samuel L. Jackson, Robert Forster, Bridget Fonda, Michael Keaton</h2>
             <h2>Summary</h2>
-            <p>Harvey Keitel was crucial in helping Tarantino launch his career, not only by starring in Reservoir Dogs but
-            also by supporting its production. He brought authority and calm to his role as Winston Wolfe in Pulp Fiction,
-            which remains one of the standout supporting performances of the 90s.</p>
+            <p>Based on Elmore Leonard’s Rum Punch, the film follows Jackie Brown, a flight attendant caught smuggling money for a gun runner. With the law closing in and her employer growing suspicious, she carefully manipulates both sides in a dangerous double-cross. More patient and character-driven than Tarantino’s previous work, Jackie Brown is a soulful, mature story about survival, trust, and second chances.</p>
         </div>
 
-        <div id="rothinfo" style="display:none;">
-            <h1>Tim Roth – 4 appearances</h1>
-            <h2>Appearances</h2>
-            <p>Reservoir Dogs (1992) – Played Mr. Orange, the undercover cop, one of the standout performances in the film.
-            Pulp Fiction (1994) – Appeared as Pumpkin, the diner robber in the film’s opening and closing scenes.
-            Four Rooms (1995) – Starred in the segment directed by Tarantino, playing Ted the Bellhop.
-            The Hateful Eight (2015) – Played Oswaldo Mobray, an eccentric English hangman.
-            </p>
-
+        <div id="kill1info" style="display:none;">
+            <h1>Kill Bill: Vol. 1 (2003)</h1>
+            <h2>Budget: ~$30 million</h2>
+            <h2>Worldwide Gross: ~$181 million</h2>
+            <h2>Stars: Uma Thurman, Lucy Liu, Vivica A. Fox, Daryl Hannah, David Carradine</h2>
             <h2>Summary</h2>
-            <p>Tim Roth has been part of Tarantino’s work since the very beginning, playing major roles in both Reservoir
-            Dogs and Pulp Fiction. His characters often stand out because of their talkative, eccentric nature, which
-            fits well with Tarantino’s focus on dialogue. Even when he isn’t the lead, Roth adds color to the ensemble
-            and helps capture the director’s mix of humor and tension.</p>
+            <p>The Bride, once an elite assassin, awakens from a four-year coma and begins a bloody quest for revenge against the team that betrayed her. Vol. 1 is a whirlwind of stylized violence inspired by samurai films, kung fu cinema, spaghetti westerns, and anime. Fast, brutal, and visually bold, it establishes one of Tarantino’s most iconic characters.</p>
         </div>
 
-        <div id="thurmaninfo" style="display:none;">
-            <h1>Uma Thurman – 3 appearances</h1>
-            <h2>Appearances</h2>
-            <p>Pulp Fiction (1994) – Played Mia Wallace, one of her defining roles.
-            Kill Bill: Vol. 1 (2003) – Starred as The Bride/Beatrix Kiddo, a former assassin seeking revenge.
-            Kill Bill: Vol. 2 (2004) – Continued The Bride’s story with more depth and dialogue.
-            </p>
-
+        <div id="kill2info" style="display:none;">
+            <h1>Kill Bill: Vol. 2 (2004)</h1>
+            <h2>Budget: ~$30 million</h2>
+            <h2>Worldwide Gross: ~$154 million</h2>
+            <h2>Uma Thurman, David Carradine, Michael Madsen, Daryl Hannah</h2>
             <h2>Summary</h2>
-            <p>Uma Thurman’s collaboration with Tarantino is one of the most important of his career. While her first role
-            as Mia Wallace in Pulp Fiction was iconic, it was her performance as The Bride in the Kill Bill films that
-            became central to Tarantino’s vision as a filmmaker. Although she hasn’t appeared as often as others, the
-            characters she has played are some of the most lasting in his filmography.</p>
+            <p>While the first volume focuses on action, Vol. 2 slows down to explore The Bride’s emotional journey and backstory. Her path to vengeance continues, but with deeper character development, western-inspired showdowns, and a nuanced examination of her relationship with Bill. The film blends quieter moments with tense confrontations, wrapping up the saga with dramatic finality.</p>
         </div>
 
+        <div id="deathinfo" style="display:none;">
+            <h1>Death Proof (2007)</h1>
+            <h2>Budget: ~$30 million</h2>
+            <h2>Worldwide Gross: ~$31 million</h2>
+            <h2>Stars: Kurt Russell, Zoë Bell, Rosario Dawson, Sydney Tamiia Poitier, Vanessa Ferlito</h2>
+            <h2>Summary</h2>
+            <p>Released as half of the double-feature Grindhouse, Death Proof is Tarantino’s homage to ’70s exploitation cinema. It follows Stuntman Mike, who uses his modified “death-proof” car to terrorize women on the road—until he picks the wrong group to target. Featuring long conversational stretches, sudden shocking violence, and exhilarating practical car chases, the film both celebrates and subverts grindhouse tropes.</p>
+        </div>
+
+        <div id="basterdsinfo" style="display:none;">
+            <h1>Inglourious Basterds (2009)</h1>
+            <h2>Budget: ~$70 million</h2>
+            <h2>Worldwide Gross: ~$321 million</h2>
+            <h2>Stars: Brad Pitt, Christoph Waltz, Mélanie Laurent, Diane Kruger, Michael Fassbender</h2>
+            <h2>Summary</h2>
+            <p>Tarantino reimagines World War II in this bold, darkly funny revenge fantasy. A squad of Jewish American soldiers spreads fear across Nazi-occupied France through brutal guerrilla tactics, while a young cinema owner plots her own devastating act of rebellion. The intersecting storylines collide in an explosive, history-rewriting finale. Suspenseful dialogue and bursts of violent action showcase Tarantino at his most audacious.</p>
+        </div>
+
+        <div id="djangoinfo" style="display:none;">
+            <h1>Django Unchained (2012)</h1>
+            <h2>Budget: ~$100 million</h2>
+            <h2>Worldwide Gross: ~$426 million</h2>
+            <h2>Stars: Jamie Foxx, Christoph Waltz, Leonardo DiCaprio, Kerry Washington, Samuel L. Jackson</h2>
+            <h2>Summary</h2>
+            <p>Set in the pre–Civil War South, the film follows Django, a freed slave who teams up with a German bounty hunter to rescue his wife from a cruel plantation owner. Equal parts spaghetti western, revenge epic, and social commentary, the movie combines humor, sharp dialogue, and uncompromising violence. It’s one of Tarantino’s most ambitious stories and his highest-grossing film.</p>
+        </div>
+
+        <div id="hatefulinfo" style="display:none;">
+            <h1>The Hateful Eight (2015)</h1>
+            <h2>Budget: ~$44 million</h2>
+            <h2>Worldwide Gross: ~$156 million</h2>
+            <h2>Stars: Samuel L. Jackson, Kurt Russell, Jennifer Jason Leigh, Walton Goggins, Tim Roth</h2>
+            <h2>Summary</h2>
+            <p>After the Civil War, a blizzard traps eight strangers inside a Wyoming cabin—bounty hunters, criminals, soldiers, and drifters with dangerous secrets. As tensions rise, alliances shift, lies unravel, and violence feels inevitable. With its stage-play structure, long dialogue sequences, and bursts of shocking bloodshed, The Hateful Eight is a claustrophobic chamber drama steeped in distrust and vengeance.</p>
+        </div>
+
+        <div id="hollywoodinfo" style="display:none;">
+            <h1>Once Upon a Time in Hollywood (2019)</h1>
+            <h2>Budget: ~$90 million</h2>
+            <h2>Worldwide Gross: ~$377 million</h2>
+            <h2>Stars: Leonardo DiCaprio, Brad Pitt, Margot Robbie, Al Pacino, Emile Hirsch</h2>
+            <h2>Summary</h2>
+            <p>Set in 1969 Los Angeles, the story follows fading TV actor Rick Dalton and his stunt double Cliff Booth as they navigate a shifting Hollywood landscape. Their fictional journey unfolds alongside real historical events—most notably the rise of the Manson Family. Blending comedy, nostalgia, and bursts of brutal violence, Tarantino crafts a bittersweet love letter to the final days of Hollywood’s golden age, capped with a revisionist twist on a dark historical moment.</p>
+        </div>
     </div>
 
     <div id="thumbnails">
-        <img src="../project-images/jacksonhead.jpg" id="jacksonthumb" onclick="ActorsOff(); JacksonOn();" alt="sam">
-        <img src="../project-images/madsenhead.jpg" id="madsenthumb" onclick="ActorsOff(); MadsenOn();" alt="mad">
-        <img src="../project-images/keitelhead.jpg" id="keitelthumb" onclick="ActorsOff(); KeitelOn();" alt="kiet">
-        <img src="../project-images/rothhead.webp" id="roththumb" onclick="ActorsOff(); RothOn();" alt="rot">
-        <img src="../project-images/thurmanhead.webp" id="thurmanthumb" onclick="ActorsOff(); ThurmanOn();" alt="thurm">
+        <img src="../project-images/SamuelJackson.avif" onclick="ActorsOff(); JacksonOn();" alt="sam">
+        <img src="../project-images/Madsen.webp" onclick="ActorsOff(); MadsenOn();" alt="mad">
+        <img src="../project-images/Reservoir-Dogs-9.jpg" onclick="ActorsOff(); KeitelOn();" alt="kiet">
+        <img src="../project-images/TimRoth.jpg" onclick="ActorsOff(); RothOn();" alt="rot">
+        <img src="../project-images/Uma-Thurman.jpg" onclick="ActorsOff(); ThurmanOn();" alt="thurm">
+        <img src="../project-images/SamuelJackson.avif" onclick="ActorsOff(); JacksonOn();" alt="sam">
+        <img src="../project-images/Madsen.webp" onclick="ActorsOff(); MadsenOn();" alt="mad">
+        <img src="../project-images/Reservoir-Dogs-9.jpg" onclick="ActorsOff(); KeitelOn();" alt="kiet">
+        <img src="../project-images/TimRoth.jpg" onclick="ActorsOff(); RothOn();" alt="rot">
+        <img src="../project-images/Uma-Thurman.jpg" onclick="ActorsOff(); ThurmanOn();" alt="thurm">
     </div>
 
 
-    </div>
+    </div></div>
 </body>
 </html>
