@@ -24,36 +24,32 @@
         }
 
         #slideshow-container {
-            width: 1000px;
+            background-color: #000000;
+            width: 1200px;
             margin: auto;
-            background: black;
-            padding: 20px;
         }
 
         #bigimages img {
-            width: 400px;
-            display: none;
-        }
-
-        #bigimages {
+            margin-right: 50px;
             float: left;
-            margin-right: 40px;
+            width: 300px;
         }
 
         #actorinfo {
-            padding: 20px;
-            width: 500px;
-            float: left;
+            padding: 100px;
         }
 
         #thumbnails {
-            clear: both;
-            text-align: center;
-            padding-top: 40px;
+            width: 850px;
+            margin: auto;
+            padding-top: 20px;
+            display: flex;
+            justify-content: center;
         }
 
         #thumbnails img {
-            width: 100px;
+            width: 90px;
+            height: 120px;
             margin: 10px;
             cursor: pointer;
             border: 2px solid white;
@@ -62,7 +58,7 @@
         #thumbnails img:hover {
             border-color: yellow;
         }
-        h1, h2 {
+        h1, h2, nav a {
             font-family: "Science Gothic", sans-serif;
             font-optical-sizing: auto;
             font-weight: 400;
@@ -70,7 +66,12 @@
             font-variation-settings:
                 "slnt" 0,
                 "wdth" 100,
-                "CTRS" 0;}
+                "CTRS" 0;
+            }
+        .actorinfo {margin: 30px}
+        .favoriteactors{
+            text-align: center;
+        }
         .amount {
             font-weight: normal;
         }
@@ -118,17 +119,20 @@
     </nav>
     <div id="slideshow-container">
    
-    <div id="bigimages">
-        <img src="../project-images/SamuelJackson.avif" id="jackson" alt="jackson">
-        <img src="../project-images/Madsen.webp" id="madsen" alt="madsen">
-        <img src="../project-images/Reservoir-Dogs-9.jpg" id="keitel" alt="keitel">
-        <img src="../project-images/TimRoth.jpg" id="roth" alt="roth">
-        <img src="../project-images/Uma-Thurman.jpg" id="thurman" alt="thurman">
+    <div class="favoriteactors">
+        <h1>Quentin Tarantino's Favorite Actors</h1>
     </div>
+   
+    <div id="bigimages">
+        <img src="../project-images/jacksonvert.jpg" style="display:none;" id="jackson" alt="jackson">
+        <img src="../project-images/madsenvert.jpg" style="display:none;" id="madsen" alt="madsen">
+        <img src="../project-images/Reservoir-Dogs-9.jpg" style="display:none;" id="keitel" alt="keitel">
+        <img src="../project-images/keitelvert.jpg" style="display:none;" id="roth" alt="roth">
+        <img src="../project-images/thurmanvert.jpeg" style="display:none;" id="thurman" alt="thurman">
+    </div>
+    <div class="actorinfo">
 
-    <div id="actorinfo">
-
-        <div id="dogsinfo" style="display:none;">
+        <div id="jacksoninfo" style="display:none;">
             <h1>Reservoir Dogs (1992)</h1>
             <h2>Budget: <span class="amount">~$1.2 million</span></h2>
             <h2>Worldwide Gross: <span class="amount">~$2.9 million</span></h2>
@@ -146,15 +150,15 @@
             director’s style. He has taken on everything from leading roles, like Jules in Pulp Fiction or Major Warren
             in The Hateful Eight, to brief cameos and even narration. What stands out is how naturally his energy and
             delivery fit with Tarantino’s writing, which makes him feel essential to the director’s body of work.</p>
-
-        <div id="pulpinfo" style="display:none;">
+        </div>
+        <div id="madseninfo" style="display:none;">
             <h1>Michael Madsen – 5 appearances</h1>
             <h2>Appearances</h2>
             <p>Reservoir Dogs (1992) – Played Mr. Blonde, infamous for the “stuck in the middle” torture scene.
             Kill Bill: Vol. 1 (2003) – Brief role as Budd in setup.
             Kill Bill: Vol. 2 (2004) – Larger role as Budd, The Bride’s down-and-out former assassin colleague.
             The Hateful Eight (2015) – Played Joe Gage, the mysterious cowboy.
-            Once Upon a Time in Hollywood (2019) – Appeared as Sheriff Hackett in Rick Dalton’s TV show.
+            O – Appeared as Sheriff Hackett in Rick Dalton’s TV show.
             </p>
 
             <h2>Summary</h2>
@@ -164,7 +168,7 @@
             unpredictability makes him one of Tarantino’s go-to actors.</p>
         </div>
 
-        <div id="browninfo" style="display:none;">
+        <div id="keitelinfo" style="display:none;">
             <h1>Harvey Keitel – 4 appearances</h1>
             <h2>Appearances</h2>
             <p>Reservoir Dogs (1992) – Played Mr. White, one of the main criminals in Tarantino’s debut.
@@ -180,7 +184,7 @@
             which remains one of the standout supporting performances of the 90s.</p>
         </div>
 
-        <div id="bill1info" style="display:none;">
+        <div id="rothinfo" style="display:none;">
             <h1>Tim Roth – 4 appearances</h1>
             <h2>Appearances</h2>
             <p>Reservoir Dogs (1992) – Played Mr. Orange, the undercover cop, one of the standout performances in the film.
@@ -196,7 +200,7 @@
             and helps capture the director’s mix of humor and tension.</p>
         </div>
 
-        <div id="bill2info" style="display:none;">
+        <div id="thurmaninfo" style="display:none;">
             <h1>Uma Thurman – 3 appearances</h1>
             <h2>Appearances</h2>
             <p>Pulp Fiction (1994) – Played Mia Wallace, one of her defining roles.
@@ -211,91 +215,17 @@
             characters she has played are some of the most lasting in his filmography.</p>
         </div>
 
-        <div id="deathinfo" style="display:none;">
-            <h1>Uma Thurman – 3 appearances</h1>
-            <h2>Appearances</h2>
-            <p>Pulp Fiction (1994) – Played Mia Wallace, one of her defining roles.
-            Kill Bill: Vol. 1 (2003) – Starred as The Bride/Beatrix Kiddo, a former assassin seeking revenge.
-            Kill Bill: Vol. 2 (2004) – Continued The Bride’s story with more depth and dialogue.
-            </p>
-
-            <h2>Summary</h2>
-            <p>Uma Thurman’s collaboration with Tarantino is one of the most important of his career. While her first role
-            as Mia Wallace in Pulp Fiction was iconic, it was her performance as The Bride in the Kill Bill films that
-            became central to Tarantino’s vision as a filmmaker. Although she hasn’t appeared as often as others, the
-            characters she has played are some of the most lasting in his filmography.</p>
-        </div>
-
-        <div id="basterdsinfo" style="display:none;">
-            <h1>Uma Thurman – 3 appearances</h1>
-            <h2>Appearances</h2>
-            <p>Pulp Fiction (1994) – Played Mia Wallace, one of her defining roles.
-            Kill Bill: Vol. 1 (2003) – Starred as The Bride/Beatrix Kiddo, a former assassin seeking revenge.
-            Kill Bill: Vol. 2 (2004) – Continued The Bride’s story with more depth and dialogue.
-            </p>
-
-            <h2>Summary</h2>
-            <p>Uma Thurman’s collaboration with Tarantino is one of the most important of his career. While her first role
-            as Mia Wallace in Pulp Fiction was iconic, it was her performance as The Bride in the Kill Bill films that
-            became central to Tarantino’s vision as a filmmaker. Although she hasn’t appeared as often as others, the
-            characters she has played are some of the most lasting in his filmography.</p>
-        </div>
-
-        <div id="djangoinfo" style="display:none;">
-            <h1>Uma Thurman – 3 appearances</h1>
-            <h2>Appearances</h2>
-            <p>Pulp Fiction (1994) – Played Mia Wallace, one of her defining roles.
-            Kill Bill: Vol. 1 (2003) – Starred as The Bride/Beatrix Kiddo, a former assassin seeking revenge.
-            Kill Bill: Vol. 2 (2004) – Continued The Bride’s story with more depth and dialogue.
-            </p>
-
-            <h2>Summary</h2>
-            <p>Uma Thurman’s collaboration with Tarantino is one of the most important of his career. While her first role
-            as Mia Wallace in Pulp Fiction was iconic, it was her performance as The Bride in the Kill Bill films that
-            became central to Tarantino’s vision as a filmmaker. Although she hasn’t appeared as often as others, the
-            characters she has played are some of the most lasting in his filmography.</p>
-        </div>
-
-        <div id="hatefulinfo" style="display:none;">
-            <h1>Uma Thurman – 3 appearances</h1>
-            <h2>Appearances</h2>
-            <p>Pulp Fiction (1994) – Played Mia Wallace, one of her defining roles.
-            Kill Bill: Vol. 1 (2003) – Starred as The Bride/Beatrix Kiddo, a former assassin seeking revenge.
-            Kill Bill: Vol. 2 (2004) – Continued The Bride’s story with more depth and dialogue.
-            </p>
-
-            <h2>Summary</h2>
-            <p>Uma Thurman’s collaboration with Tarantino is one of the most important of his career. While her first role
-            as Mia Wallace in Pulp Fiction was iconic, it was her performance as The Bride in the Kill Bill films that
-            became central to Tarantino’s vision as a filmmaker. Although she hasn’t appeared as often as others, the
-            characters she has played are some of the most lasting in his filmography.</p>
-        </div>
-
-        <div id="onceinfo" style="display:none;">
-            <h1>Uma Thurman – 3 appearances</h1>
-            <h2>Appearances</h2>
-            <p>Pulp Fiction (1994) – Played Mia Wallace, one of her defining roles.
-            Kill Bill: Vol. 1 (2003) – Starred as The Bride/Beatrix Kiddo, a former assassin seeking revenge.
-            Kill Bill: Vol. 2 (2004) – Continued The Bride’s story with more depth and dialogue.
-            </p>
-
-            <h2>Summary</h2>
-            <p>Uma Thurman’s collaboration with Tarantino is one of the most important of his career. While her first role
-            as Mia Wallace in Pulp Fiction was iconic, it was her performance as The Bride in the Kill Bill films that
-            became central to Tarantino’s vision as a filmmaker. Although she hasn’t appeared as often as others, the
-            characters she has played are some of the most lasting in his filmography.</p>
-        </div>
     </div>
 
     <div id="thumbnails">
-        <img src="../project-images/SamuelJackson.avif" onclick="ActorsOff(); JacksonOn();" alt="sam">
-        <img src="../project-images/Madsen.webp" onclick="ActorsOff(); MadsenOn();" alt="mad">
-        <img src="../project-images/Reservoir-Dogs-9.jpg" onclick="ActorsOff(); KeitelOn();" alt="kiet">
-        <img src="../project-images/TimRoth.jpg" onclick="ActorsOff(); RothOn();" alt="rot">
-        <img src="../project-images/Uma-Thurman.jpg" onclick="ActorsOff(); ThurmanOn();" alt="thurm">
+        <img src="../project-images/jacksonhead.jpg" id="jacksonthumb" onclick="ActorsOff(); JacksonOn();" alt="sam">
+        <img src="../project-images/madsenhead.jpg" id="madsenthumb" onclick="ActorsOff(); MadsenOn();" alt="mad">
+        <img src="../project-images/keitelhead.jpg" id="keitelthumb" onclick="ActorsOff(); KeitelOn();" alt="kiet">
+        <img src="../project-images/rothhead.webp" id="roththumb" onclick="ActorsOff(); RothOn();" alt="rot">
+        <img src="../project-images/thurmanhead.webp" id="thurmanthumb" onclick="ActorsOff(); ThurmanOn();" alt="thurm">
     </div>
 
 
-    </div></div>
+    </div>
 </body>
 </html>
