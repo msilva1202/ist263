@@ -58,6 +58,27 @@
         .firstimage, .secondimage, .thirdimage {
             padding: 0px 10px;
         }
+        .hero {
+            position: relative;   /* allows text to position inside */
+            width: 1024px;
+            }
+
+            .hero img {
+            width: 100%;
+            height: auto;
+            display: block;
+            }
+
+            .hero-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); /* perfect center */
+            color: white;
+            font-size: 48px;
+            font-weight: bold;
+            text-shadow: 2px 2px 6px black;   /* readability */
+            }
 
     </style>
     <script>
@@ -68,6 +89,10 @@
         <a href="projectmovies.html">Movies</a>
         <a href="projectactorsproj6copy.html">Actors</a>
     </nav>
+    <header class="hero">
+        <img src="../project-images/posing.jpeg" class="img1" alt="Tom Brady and Me">
+        <h1 class="hero-text">Tarantino Journey to Filmmaking</h1>
+    </header>
     <div id="slideshow-container">
         <div class="tarantinohome">
         <h1>Tarantinos Journey to Filmmaking</h1>
